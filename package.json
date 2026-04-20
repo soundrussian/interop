@@ -1,0 +1,45 @@
+{
+  "name": "@soundrussian/interop",
+  "version": "1.0.0",
+  "description": "Drop-in browser interop helpers for script-tag and bundled usage.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "unpkg": "./dist/interop.global.js",
+  "jsdelivr": "./dist/interop.global.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && npm run build:iife",
+    "build:esm": "esbuild src/index.js --bundle --format=esm --platform=browser --outfile=dist/index.js",
+    "build:cjs": "esbuild src/index.js --bundle --format=cjs --platform=browser --outfile=dist/index.cjs",
+    "build:iife": "esbuild src/global.js --bundle --format=iife --platform=browser --outfile=dist/interop.global.js",
+    "prepack": "npm run build",
+    "test": "npm run build && node --test"
+  },
+  "keywords": [
+    "browser",
+    "cdn",
+    "interop",
+    "script-tag",
+    "side-effect"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
