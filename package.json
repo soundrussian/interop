@@ -39,6 +39,14 @@
     "script-tag",
     "side-effect"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soundrussian/interop.git"
+  },
+  "homepage": "https://github.com/soundrussian/interop#readme",
+  "bugs": {
+    "url": "https://github.com/soundrussian/interop/issues"
+  },
   "devDependencies": {
     "esbuild": "^0.28.0",
     "vitest": "^4.1.4"
