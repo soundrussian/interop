@@ -48,3 +48,9 @@ window.AsgInterop.getReferrer();
 ## Notes
 
 Some sites use Content Security Policy rules that block third-party scripts. In those environments, prefer bundling the package into your own assets instead of loading it from a CDN.
+
+## Development
+
+- `npm test` builds the package and runs the test suite
+- `dist/` is generated during build and publish, not committed as source
+- Release steps are documented in [`RELEASING.md`](./RELEASING.md)
