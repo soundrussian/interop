@@ -1,4 +1,4 @@
-# Releasing `@soundrussian/interop`
+# Releasing `@soundrussian-org/interop`
 
 This package is built in CI and at publish time. `dist/` should not be committed to git.
 
@@ -6,7 +6,7 @@ This package is built in CI and at publish time. `dist/` should not be committed
 
 1. Create the GitHub repository and push the project to `main`.
 2. In npm, ensure the package scope and package name are correct.
-3. On npmjs.com, open the package settings for `@soundrussian/interop`.
+3. On npmjs.com, open the package settings for `@soundrussian-org/interop`.
 4. In the `Trusted Publisher` section, add a GitHub Actions trusted publisher for this repository.
 5. Enter the exact release workflow filename: `release.yml`.
 

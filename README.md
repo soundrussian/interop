@@ -1,11 +1,11 @@
-# `@soundrussian/interop`
+# `@soundrussian-org/interop`
 
 Drop-in browser interop helpers for pages that need a global `window.AsgInterop`.
 
 ## Install
 
 ```bash
-npm install @soundrussian/interop
+npm install @soundrussian-org/interop
 ```
 
 ## CDN usage
@@ -13,11 +13,11 @@ npm install @soundrussian/interop
 Load the browser bundle from a CDN and it will initialize `window.AsgInterop` on page load.
 
 ```html
-<script src="https://unpkg.com/@soundrussian/interop"></script>
+<script src="https://unpkg.com/@soundrussian-org/interop"></script>
 ```
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@soundrussian/interop"></script>
+<script src="https://cdn.jsdelivr.net/npm/@soundrussian-org/interop"></script>
 ```
 
 After the script loads:
@@ -32,7 +32,7 @@ window.AsgInterop.getReferrer();
 Import the package for its side effect. Your final browser bundle will initialize the same global at runtime.
 
 ```js
-import "@soundrussian/interop";
+import "@soundrussian-org/interop";
 
 window.AsgInterop.getCurrentUrl();
 window.AsgInterop.getReferrer();
