@@ -1,6 +1,6 @@
 {
   "name": "@soundrussian-org/interop",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Drop-in browser interop helpers.",
   "license": "MIT",
   "type": "module",
